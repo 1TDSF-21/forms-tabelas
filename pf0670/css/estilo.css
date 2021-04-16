@@ -2,3 +2,45 @@
     margin: 0 20%;
     background-color: #faebd7;
 }
+
+
+table {
+    width: 100%;
+    border-spacing: 5px;
+}
+
+table,
+th,
+td {
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+td {
+    text-align: center;
+}
+
+.img-tbl {
+    width: 35%;
+}
+
+tr:nth-child(even) {
+    background-color: #1c99b8;
+}
+
+tr:nth-child(odd) {
+    background-color: #b8860b;
+}
+
+th {
+    background-color: #ff8c00;
+}
+
+tr:hover {
+    background-color: #696969;
+}
