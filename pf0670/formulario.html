@@ -5,11 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMS</title>
+    <link rel="stylesheet" href="./css/estilo.css" type="text/css">
 </head>
 
 <body>
     <div id="container">
-
+        <h1>FORMULÁRIO DE CADASTRO</h1>
+        <div class="frm-01">
+            <form action="tabela.html" method="GET">
+                <div>
+                    <label for="idtxtNm">Nome:</label> <br>
+                    <input id="idtxtNm" type="text" name="txtNm" placeholder="Digite seu nome.">
+                </div>
+                <div>
+                    <label for="idtxtProf">Profissão:</label> <br>
+                    <input id="idtxtProf" type="text" name="txtProf" placeholder="Digite sua profissão.">
+                </div>
+                <div> <label for="idchkDados">Armazenar dados?</label>
+                    <input type="checkbox" name="chkDados" id="idchkDados">
+                </div>
+                <div>
+                    <input type="submit" name="ENVIAR">
+                </div>
+            </form>
+        </div>
 
     </div>
 </body>
