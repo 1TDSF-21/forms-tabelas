@@ -38,3 +38,20 @@ tr:hover{
     background-color: rgb(255, 0, 149);
 
 }
+
+.frm-01 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.frm-01 input {
+    border-radius: 5px;
+
+}
+
+.frm-01 input[type="submit"] {
+    border-radius: 5px;
+    background-color: blue;
+    border: 1px solid rgb(146, 146, 146);
+    
+}

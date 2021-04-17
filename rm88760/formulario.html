@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM</title>
+    <link rel="stylesheet" href="./css/estilo.css" type="text/css">
 </head>
 
 <body>
     <div id="container">
         <h1>Formulario de Cadastro</h1>
-        <div>
+        <div class="frm-01">
             <form action="tabela.html" method="GET">
                 <div>
-                        Nome: <input type="text" name="txtNM" placeholder="Digite seu nome">
+                    <label for="txtxNM">Nome:</label> <br>
+                    <input type="text" name="txtNM" id="txtxNM" placeholder="Digite seu nome">
                 </div>
                 <div>
-                        Profissão: <input type="text" name="txtProf" placeholder="Digite sua profissão"> 
+                    <label for="txtxProf">Profissão:</label> <br>
+                    <input type="text" name="txtProf" id="txtxProf" placeholder="Digite sua profissão"> 
+                 </div>
+                 <div>
+                     <label for="chxidDados">Aramazenar Dados?</label>
+                     <input type="checkbox" name="chxDados" id="chxidDados">
                  </div>
                  <div>
                       <input type="submit" value="ENVIAR">
