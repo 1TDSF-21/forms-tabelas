@@ -33,3 +33,8 @@ tr:nth-child(odd){
 th{
     background-color: blanchedalmond;
 }
+
+tr:hover{
+    background-color: rgb(255, 0, 149);
+
+}
