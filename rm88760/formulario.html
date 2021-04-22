@@ -13,22 +13,33 @@
         <h1>Formulario de Cadastro</h1>
         <div class="frm-01">
             <form action="tabela.html" method="GET">
-                <div>
-                    <label for="txtxNM">Nome:</label> <br>
-                    <input type="text" name="txtNM" id="txtxNM" placeholder="Digite seu nome">
-                </div>
-                <div>
-                    <label for="txtxProf">Profissão:</label> <br>
-                    <input type="text" name="txtProf" id="txtxProf" placeholder="Digite sua profissão"> 
-                 </div>
-                 <div>
-                     <label for="chxidDados">Aramazenar Dados?</label>
-                     <input type="checkbox" name="chxDados" id="chxidDados">
-                 </div>
-                 <div>
-                      <input type="submit" value="ENVIAR">
-                 </div>
-
+                <fieldset>
+                    <legend>FORMULÁRIO DE CADASTRO</legend>
+                    <div>
+                        <label for="idtxtNm">Nome:</label><br>
+                        <input type="text" name="txtNm" id="idtxtNm" placeholder="Digite o seu nome." 
+                        oninvalid="setCustomValidity('É obrigatorio preenchimento deste campo.')"
+                        pattern="[a-zA-Z]+">
+                    </div>
+                    <div>
+                        <label for="idtxtProf">Profissão:</label><br>
+                        <input type="text" name="txtProf" id="idtxtProf" placeholder="Digite sua profissão." pattern="[a-zA-Z]+"
+                        oninvalid="setCustomValidity('É obrigatorio preenchimento deste campo.')">
+                    </div>
+                    <div>
+                        <label for="idtxtProf">Email:</label><br>
+                        <input type="text" name="txtEmail" id="idTxtEmail" placeholder="Digite sua profissão." pattern="[a-zA-Z0-9.-_]{4,15}@[a-z0-9.-_]{2,10}.[a-z0-9.]{2,3}"
+                         oninvalid="setCustomValidty('É obrigatorio preenchimento deste campo.')">
+                    </div>
+                    <div>
+                        <label for="chxidDados">Aramazenar Dados?</label>
+                        <input type="checkbox" name="chxDados" id="chxidDados" required>
+                     </div>
+                    <div>
+                        <input type="submit" value="ENVIAR" >
+                    </div>
+                    
+                </fieldset>
 
             </form>
         </div>

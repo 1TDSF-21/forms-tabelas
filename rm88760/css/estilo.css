@@ -44,14 +44,24 @@ tr:hover{
     
 }
 
-.frm-01 input {
+input[type=text] {
     border-radius: 5px;
-
+    width: 100%;
+    padding: 5% 0;
+    font-size: 20px;
 }
 
+
+input[type=text]:invalid {
+    background-color: #dc143c;
+}
+
+
 .frm-01 input[type="submit"] {
-    border-radius: 5px;
-    background-color: blue;
-    border: 1px solid rgb(146, 146, 146);
-    
+    background-color: dodgerblue;
+    width: 100px;
+    border: 1px solid #ccc;
+    color: #fff;
+    margin: auto;
+    display: block;
 }
