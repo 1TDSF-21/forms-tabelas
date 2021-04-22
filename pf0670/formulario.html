@@ -10,23 +10,39 @@
 
 <body>
     <div id="container">
-        <h1>FORMULÁRIO DE CADASTRO</h1>
+        <h1>EXEMPLO DE FORMULÁRIO</h1>
         <div class="frm-01">
             <form action="tabela.html" method="GET">
-                <div>
-                    <label for="idtxtNm">Nome:</label><br>
-                    <input type="text" name="txtNm" id="idtxtNm" placeholder="Digite o seu nome.">
-                </div>
-                <div>
-                    <label for="idtxtProf">Profissão:</label><br>
-                    <input type="text" name="txtProf" id="idtxtProf" placeholder="Digite sua profissão.">
-                </div>
-                <div><label for="idchkDados">Armazenar dados?</label>
-                    <input type="checkbox" name="chkDados" id="idchkDados">
-                </div>
-                <div>
-                    <input type="submit" value="ENVIAR">
-                </div>
+                <fieldset>
+                    <legend>FORMULÁRIO DE CADASTRO</legend>
+                    <div>
+                        <label for="idtxtNm">Nome:</label><br>
+                        <input type="text" name="txtNm" id="idtxtNm" placeholder="Digite o seu nome."
+                            oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
+                            pattern="[a-zA-Z]+">
+                    </div>
+                    <div>
+                        <label for="idtxtProf">Profissão:</label><br>
+                        <input type="text" name="txtProf" id="idtxtProf" placeholder="Digite sua profissão."
+                            oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
+                            pattern="[a-zA-Z]+">
+                    </div>
+                    <div>
+
+                        <!-- profalexandre.jesus@fiap.com.br -->
+
+                        <label for="idTxtEmail">Email:</label><br>
+                        <input type="text" name="txtEmail" id="idTxtEmail" placeholder="Digite seu email."
+                            oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
+                            pattern="[a-zA-Z0-9.-_]{3,30}@[a-z0-9-_]{2,10}.[a-z0-9.]{2,7}">
+                    </div>
+                    <div><label for="idchkDados">Armazenar dados?</label>
+                        <input type="checkbox" name="chkDados" id="idchkDados">
+                    </div>
+                    <div>
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </fieldset>
             </form>
         </div>
 

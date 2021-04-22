@@ -50,9 +50,17 @@ tr:hover {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.frm-01 input {
+input[type=text] {
     border-radius: 5px;
+    width: 100%;
+    padding: 5% 0;
+    font-size: 20px;
 }
+
+input[type=text]:invalid {
+    background-color: #dc143c;
+}
+
 
 .frm-01 input[type="submit"] {
     background-color: dodgerblue;
