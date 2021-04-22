@@ -10,23 +10,36 @@
 
 <body>
     <div id="container">
-        <h1>FORMULÁRIO DE CADASTRO</h1>
+        <h1>EXEMPLO DE FORMULÁRIO</h1>
         <div class="frm-01">
-            <form action="tabela.html" method="GET">
-                <div>
-                    <label for="idtxtNm">Nome:</label> <br>
-                    <input id="idtxtNm" type="text" name="txtNm" placeholder="Digite seu nome.">
-                </div>
-                <div>
-                    <label for="idtxtProf">Profissão:</label> <br>
-                    <input id="idtxtProf" type="text" name="txtProf" placeholder="Digite sua profissão.">
-                </div>
-                <div> <label for="idchkDados">Armazenar dados?</label>
-                    <input type="checkbox" name="chkDados" id="idchkDados">
-                </div>
-                <div>
-                    <input type="submit" name="ENVIAR">
-                </div>
+            <form action="tabela.html" method="GET">                
+                <fieldset>
+                    <legend>FORMULÁRIO DE CADASTRO</legend>
+                    <div>
+                        <label for="idtxtNm">Nome:</label> <br>
+                        <input id="idtxtNm" type="text" name="txtNm" placeholder="Digite seu nome."                       
+                            oninvalid="setCustomValidity('É obrigatorio o preenchimento deste campo')"
+                            pattern="[a-zA-Z]+">
+                    </div>
+                    <div>
+                        <label for="idTxtEmail">Email:</label> <br>
+                        <input id="idTxtEmail" type="text" name="txtEmail" placeholder="Digite seu email."                        
+                            oninvalid="setCustomValidity('É obrigatorio o preenchimento deste campo')"
+                            pattern="[a-zA-Z0-9.-_]{3,30}@[a-z0-9-_]{2,10}.[a-z0-9.]{2,7}">
+                    </div>
+                    <div>
+                        <label for="idtxtProf">Profissão:</label> <br>
+                        <input id="idtxtProf" type="text" name="txtProf" placeholder="Digite sua profissão."                            
+                            oninvalid="setCustomValidity('É obrigatorio o preenchimento deste campo')"
+                            pattern="[a-zA-Z]+">
+                    </div>
+                    <div> <label for="idchkDados">Armazenar dados?</label>
+                        <input type="checkbox" name="chkDados" id="idchkDados">
+                    </div>
+                    <div>
+                        <input type="submit" name="ENVIAR">
+                    </div>
+                </fieldset>
             </form>
         </div>
 

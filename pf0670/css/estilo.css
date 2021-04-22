@@ -45,8 +45,16 @@ tr:hover {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.frm-01 input {
+input[type=text],
+input[type=email] {
     border-radius: 5px;
+    width: 100%;
+    padding: 5% 0;
+    font-size: 20px;
+}
+
+input[type=text]:invalid {
+    background-color: #ff0000;
 }
 
 .frm-01 input[type="submit"] {
@@ -54,4 +62,6 @@ tr:hover {
     width: 100px;
     border: 1px solid #ccc;
     color: #fff;
+    margin: auto;
+    display: block;
 }
