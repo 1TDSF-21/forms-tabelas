@@ -5,11 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMS</title>
+    <link rel="stylesheet" href="./css/estilo.css" type="text/css">
 </head>
 
 <body>
     <div id="container">
-
+        <h1>EXEMPLO DE FORMULÁRIO</h1>
+        <div class="frm-01">
+            <form action="tabela.html" method="GET">
+                <fieldset>
+                    <legend>FORMULÁRIO DE CADASTRO</legend>
+                    <div>
+                        <label for="idtxtNm">Nome:</label><br>
+                        <input type="text" name="txtNm" id="idtxtNm" placeholder="Digite o seu nome."
+                            oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
+                            pattern="[a-zA-Z]+" required>
+                    </div>
+                    <div>
+                        <label for="idtxtProf">Profissão:</label><br>
+                        <input type="text" name="txtProf" id="idtxtProf" placeholder="Digite sua profissão."
+                            oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
+                            pattern="[a-zA-Z]+" required>
+                    </div>
+                    <div>
+                        <!-- profalexandre.jesus@fiap.com.br -->
+                        <label for="idTxtEmail">Email:</label><br>
+                        <input type="text" name="txtEmail" id="idTxtEmail" placeholder="Digite seu email."
+                            oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
+                            pattern="[a-zA-Z0-9.-_]{3,30}@[a-z0-9-_]{2,10}.[a-z0-9.]{2,7}" required>
+                    </div>
+                    <fieldset class="info">
+                        <legend>GÊNERO</legend>
+                        <div>
+                            <div>
+                                <label for="idRdbGenM">Masculino</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenM" value="m" checked="checked">
+                            </div>
+                            <div>
+                                <label for="idRdbGenF">Feminino</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenF" value="f">
+                            </div>
+                            <div>
+                                <label for="idRdbGenO">Outros</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenO" value="o">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label for="idChkDados">Armazenar dados?</label>
+                        <input type="checkbox" name="chkDados" id="idChkDados" value="chk">
+                    </div>
+                </fieldset>
+                <fieldset class="info">
+                    <legend>ENDEREÇO</legend>
+                    <div>
+                        <div>
+                            <label for="idTxtRua">Rua:</label>
+                            <input type="text" name="txtRua" id="idTxtRua" placeholder="Digite seu endereço."
+                                oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
+                                pattern="[a-zA-Z0-9-/ãÃáÁ]+" required>
+                        </div>
+                        <div>
+                            <label for="idSelEstados">Estado:</label>
+                            <select name="selEstados" id="idSelEstados">
+                                <option value="v">SELECIONE UM OPÇÃO</option>
+                                <option value="sp">SÃO PAULO</option>
+                                <option value="rj">RIO DE JANEIRO</option>
+                                <option value="sc">SANTA CATARINA</option>
+                                <option value="ba">BAHIA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
 
     </div>
 </body>
