@@ -13,33 +13,71 @@
         <h1>EXEMPLO DE FORMULÁRIO</h1>
         <div class="frm-01">
             <form action="tabela.html" method="GET">                
-                <fieldset>
+                <fieldset class="info">
                     <legend>FORMULÁRIO DE CADASTRO</legend>
                     <div>
                         <label for="idtxtNm">Nome:</label> <br>
                         <input id="idtxtNm" type="text" name="txtNm" placeholder="Digite seu nome."                       
                             oninvalid="setCustomValidity('É obrigatorio o preenchimento deste campo')"
-                            pattern="[a-zA-Z]+">
+                            pattern="[a-zA-Z]+" required>
                     </div>
                     <div>
                         <label for="idTxtEmail">Email:</label> <br>
                         <input id="idTxtEmail" type="text" name="txtEmail" placeholder="Digite seu email."                        
                             oninvalid="setCustomValidity('É obrigatorio o preenchimento deste campo')"
-                            pattern="[a-zA-Z0-9.-_]{3,30}@[a-z0-9-_]{2,10}.[a-z0-9.]{2,7}">
+                            pattern="[a-zA-Z0-9.-_]{3,30}@[a-z0-9-_]{2,10}.[a-z0-9.]{2,7}" required>
                     </div>
                     <div>
                         <label for="idtxtProf">Profissão:</label> <br>
                         <input id="idtxtProf" type="text" name="txtProf" placeholder="Digite sua profissão."                            
                             oninvalid="setCustomValidity('É obrigatorio o preenchimento deste campo')"
-                            pattern="[a-zA-Z]+">
+                            pattern="[a-zA-Z]+" required>
                     </div>
-                    <div> <label for="idchkDados">Armazenar dados?</label>
-                        <input type="checkbox" name="chkDados" id="idchkDados">
-                    </div>
+                    <fieldset class="info">
+                        <legend>GÊNERO</legend>
+                        <div>
+                            <div>
+                                <label for="idRdbGenM">Masculino</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenM" value="m" checked>
+                            </div>
+                            <div>
+                                <label for="idRdbGenF">Feminino</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenF" value="f">
+                            </div>
+                            <div>
+                                <label for="idRdbGenO">Outros</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenO" value="o">
+                            </div>
+                        </div>
+                    </fieldset>
+                </fieldset>
+                <fieldset class="info">
+                    <legend>ENDEREÇO</legend>
                     <div>
-                        <input type="submit" name="ENVIAR">
+                        <div>
+                            <label for="">Rua:</label>
+                            <input type="text" name="txtRua" id="idTxtRua" placeholder="Digite seu endereço."                            
+                            oninvalid="setCustomValidity('É obrigatorio o preenchimento deste campo')"
+                            pattern="[a-zA-Z0-9-/]+" required>
+                        </div>
+                        <div>
+                            <label for="idSelEstados">Estado:</label>
+                            <select name="selEstados" id="idSelEstados">
+                                <option value="v">SELECIONE UMA OPÇÃO</option>
+                                <option value="sp">SÂO PAULO</option>
+                                <option value="rj">RIO DE JANEIRO</option>
+                                <option value="sc">SANTA CATARINA</option>
+                                <option value="ba">BAHIA</option>
+                            </select>
+                        </div>
                     </div>
                 </fieldset>
+                <div> <label for="idchkDados">Armazenar dados?</label>  
+                    <input type="checkbox" name="chkDados" id="idchkDados" value="chk">
+                </div>
+                <div>
+                    <input type="submit" name="ENVIAR">
+                </div>
             </form>
         </div>
 
