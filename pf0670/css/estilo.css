@@ -53,20 +53,41 @@ tr:hover {
 input[type=text] {
     border-radius: 5px;
     width: 100%;
-    padding: 5% 0;
+    padding: 2% 0;
     font-size: 20px;
-}
-
-input[type=text]:invalid {
-    background-color: #dc143c;
 }
 
 
 .frm-01 input[type="submit"] {
     background-color: dodgerblue;
-    width: 100px;
+
     border: 1px solid #ccc;
     color: #fff;
     margin: auto;
     display: block;
+    padding: 2% 4%;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.frm-01 input[type="submit"]:hover {
+    background-color: #0f5161;
+}
+
+
+
+.info {
+    margin: 10px 0;
+}
+
+.info select {
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 30%;
+    padding: 2% 0;
+}
+
+input[type=text]:invalid {
+    background-color: #dc143c;
 }
