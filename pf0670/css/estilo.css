@@ -1,9 +1,12 @@
+/*COMUM*/
 #container {
     margin: 0 20%;
     background-color: #faebd7;
 }
 
+/*COMUM*/
 
+/*tabela.html*/
 table {
     width: 100%;
     border-spacing: 5px;
@@ -45,7 +48,9 @@ tr:hover {
     background-color: #696969;
 }
 
+/*tabela.html*/
 
+/*formulario.html*/
 .frm-01 {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -74,8 +79,6 @@ input[type=text] {
     background-color: #0f5161;
 }
 
-
-
 .info {
     margin: 10px 0;
 }
@@ -88,6 +91,9 @@ input[type=text] {
     padding: 2% 0;
 }
 
-input[type=text]:invalid {
-    background-color: #dc143c;
+input[type=text]:focus:invalid {
+    border: 4px solid #dc143c;
+    background-color: #ffc7c7;
 }
+
+/*formulario.html*/
